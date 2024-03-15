@@ -14,7 +14,7 @@ public partial class StudentLogin : System.Web.UI.Page
         if (!IsPostBack)
         {
             ddlArea.Items.Clear();
-            ddlArea.Items.Add("Select Your Area");
+            ddlArea.Items.Add("Select Area");
             SqlConnection con = new SqlConnection(ConfigurationManager.AppSettings["LIS"]);
             SqlCommand cmd = new SqlCommand();
             con.Open();
