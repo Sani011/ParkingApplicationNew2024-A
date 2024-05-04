@@ -1,5 +1,5 @@
 /********** common setting **********/
-h2 {
+/*h2 {
     font-size: 2.8rem !important;
     font-weight: 700;
 }
@@ -66,19 +66,19 @@ button {
 
 #banner {
     background-size: cover;
-}
+}*/
 
 /********** banner **********/
-#banner header {
+/*#banner header {
     overflow: hidden;
 }
 
 #banner header img {
     max-width: 80px;
-}
+}*/
 
 /********** feature (skew background) **********/
-.feature img {
+/*.feature img {
     width: 100%;
     max-width: 480px;
 }
@@ -89,10 +89,10 @@ button {
 
 #feature-last {
     background: #00FFAD;
-}
+}*/
 
 /********** price table **********/
-#price-table {
+/*#price-table {
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
 }
@@ -104,10 +104,10 @@ button {
 
 #price-table ul li {
     padding: 5px 0;
-}
+}*/
 
 /********** contact **********/
-#contact {
+/*#contact {
     background-size: cover;
 }
 
@@ -124,10 +124,10 @@ button {
     background: transparent;
     border: 1px solid #00FFAD;
     color: #ffffff;
-}
+}*/
 
 /********** copyright **********/
-#copyright {
+/*#copyright {
     background: #192440;
     padding: 2rem 3rem;
 }
@@ -152,11 +152,11 @@ button {
 
 #copyright #social-media a:hover i {
     color: #ffffff;
-}
+}*/
 
 /********** RWD **********/
-@media (max-width: 575px) {
+/*@media (max-width: 575px) {
     #banner h1 {
         font-size: 3.6rem;
     }
-}
+}*/
