@@ -76,5 +76,93 @@
 <script src="assets/js/pages/examples/sign-in.js"></script>
 </body>
 
+
 <!-- Mirrored from thememakker.com/swift/hospital/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 Feb 2017 17:11:01 GMT -->
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>30% Sale Banner</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner {
+        background-color: #FF9900;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+    }
+
+    .sale-text {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .sale-countdown {
+        font-size: 20px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #fff;
+        color: #FF9900;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #FFCC66;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+
+<div class="banner">
+    <div class="sale-text">Big Sale! Get 30% Off Today!</div>
+    <div class="sale-countdown" id="countdown"></div>
+    <a href="#shop-now" class="btn">Shop Now</a>
+</div>
+
+<script>
+    // Set the date for the end of the sale (change as needed)
+    const saleEndDate = new Date('2024-05-31T23:59:59');
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = saleEndDate - now;
+
+        // Calculate days, hours, minutes, and seconds
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the countdown
+        document.getElementById('countdown').innerHTML = `Sale ends in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+        // Update the countdown every second
+        if (distance < 0) {
+            clearInterval(updateInterval);
+            document.getElementById('countdown').innerHTML = 'Sale has ended!';
+        }
+    }
+
+    // Update the countdown immediately
+    updateCountdown();
+
+    // Update the countdown every second
+    const updateInterval = setInterval(updateCountdown, 1000);
+</script>
+
+</body>
 </html>
