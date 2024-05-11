@@ -139,6 +139,8 @@
                 <li><a href="AdminLogin.aspx"><i class="zmdi zmdi-account-o"></i><span>Admin Login</span></a></li>
                 <li><a href="UserRegistration.aspx"><i class="zmdi zmdi-account-o"></i><span>User Login</span></a></li>
                 <li><a href="ExtraPages/index.html"><i class="zmdi zmdi-account-o"></i><span>EV Charging Solution</span></a></li>
+                <li><a href="ExtraPages/Support.html"><i class="zmdi zmdi-account-o"></i><span>Customer Support</span></a></li>
+
                 
             </ul>
         </div>
